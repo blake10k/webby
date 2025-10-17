@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional business solutions tailored for your success." />
+  <meta name="keywords" content="business, solutions, services, consulting" />
+  <meta name="author" content="Your Company Name" />
+  <title>Your Company - Professional Business Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary Navigation">
+      <div class="container nav-container">
+        <a href="#" class="logo" aria-label="Your Company Logo">YourCompany</a>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section" aria-label="Hero Section">
+      <div class="container hero-content">
+        <h1>Empowering Your Business to Succeed</h1>
+        <p>Innovative solutions tailored to your needs. Let's grow together.</p>
+        <a href="#contact" class="btn-primary">Get Started</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Us</h2>
+        <p>
+          At YourCompany, we specialize in delivering high-quality business solutions that drive growth and efficiency. Our expert team is committed to helping you navigate the challenges of today's market.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services-section" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Our Services</h2>
+        <ul class="services-list">
+          <li>
+            <h3>Consulting</h3>
+            <p>Expert advice to optimize your business strategies.</p>
+          </li>
+          <li>
+            <h3>Marketing</h3>
+            <p>Innovative marketing solutions to expand your reach.</p>
+          </li>
+          <li>
+            <h3>Technology</h3>
+            <p>Advanced tech solutions to streamline operations.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">What Our Clients Say</h2>
+        <ul class="testimonials-list">
+          <li>
+            <blockquote>
+              <p>"YourCompany transformed our business approach. Highly recommend their services!"</p>
+              <footer>— Sarah K., CEO of InnovateX</footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>"Professional, reliable, and results-driven. A true partner in success."</p>
+              <footer>— James M., Founder of BrightTech</footer>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Get in Touch</h2>
+        <form action="#" method="post" class="contact-form" aria-describedby="contact-instruction">
+          <p id="contact-instruction">Fill out the form below and we'll get back to you shortly.</p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <p>&copy; 2025 YourCompany. All rights reserved.</p>
+      <ul class="social-links" aria-label="Social Media Links">
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('primary-navigation');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
