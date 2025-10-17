@@ -1,0 +1,15 @@
+{
+  "name": "yourcompany-business-website",
+  "version": "1.0.0",
+  "description": "Responsive business website for YourCompany",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --open=./index.html",
+    "build": "echo 'No build step required for static site.'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
